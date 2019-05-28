@@ -2,7 +2,7 @@
 
 This project compares different approaches to classifying the multivariate sentiments of IMDB movie reviews using supervised learning and the bag-of-words model. The use of n-grams and Tf-Idf are compared and contrasted to see how much influence they have on the results attained by both a Support Vector Machine (SVM) classifier and a Naive Bayes (NB) classifier. Next to predicting the sentiment review scores from 1-4 and 7-10, the tests are also performed for binomial sentiment classification and grouped classification (very negative {1-2}, negative {3-4}, positive {7-8}, very positive {9-10}).
 
-* **_The paper_** accompanying the research [can be found in the repository](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/NLP_Project.pdf).
+* **_The paper_** accompanying the research [can be found in our repository](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/NLP_Project.pdf).
 
 * **_The program_** containing the model and experiments can be found in the [Jupyter notebook in our repository](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/classifiersFINAL.ipynb). Graphs of the results are included in the notebook below each set of experiments.
 
