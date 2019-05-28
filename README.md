@@ -7,15 +7,20 @@ This project compares different approaches to classifying the multivariate senti
 * **_The program_** containing the model and experiments can be found in the [Jupyter notebook in our repository](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/classifiersFINAL.ipynb). Graphs of the results are included in the notebook below each set of experiments.
 
 * **_Graphs of the results_** (included in the paper and the Jupyter notebook linked above) can be found in the [graphs folder](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/tree/master/graphs)
-  * Binary sentiment classification
-    * A comparison of the accuracy of SVM with and without n-grams and Tf-Idf on binary sentiment
-    * A comparison of the accuracy of NB with and without n-grams and Tf-Idf on binary sentiment
+  * Binary sentiment classification (where scores of {1-4} are seen as negative and scores in the range of {7-10} are positive)
+    * [A comparison of the accuracy of SVM with and without n-grams and Tf-Idf on binary sentiment prediction](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/graphs/svmbinary.png)
+    * [A comparison of the accuracy of NB with and without n-grams and Tf-Idf on binary sentiment prediction](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/graphs/nbbinary.png)
     * [The accuracy of the best SVM classifier compared to that of the best NB classifier](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/graphs/binarybest.png)
-  * Group sentiment classification
-    * A comparison of the accuracy of SVM with and without n-grams and Tf-Idf on binary sentiment
-    * A comparison of the accuracy of NB with and without n-grams and Tf-Idf on binary sentiment
-    * The accuracy of the best SVM classifier compared to that of the best NB classifier
+  * Grouped score sentiment classification (where similar scores are grouped together ({1,2}, {3,4}, {7,8}, {9,10}))
+    * [A comparison of the accuracy of SVM with and without n-grams and Tf-Idf on grouped sentiment prediction](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/graphs/svmgroupedscore.png)
+    * [A comparison of the accuracy of NB with and without n-grams and Tf-Idf on grouped sentiment prediction](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/graphs/nbgroupedscore.png)
+    * [The accuracy of the best SVM classifier compared to that of the best NB classifier](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/graphs/groupbest.png)
+  * Distinct score classification (where scores are separate)
+    * [A comparison of the accuracy of SVM with and without n-grams and Tf-Idf on score prediction](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/graphs/svmscore.png)
+    * [A comparison of the accuracy of NB with and without n-grams and Tf-Idf on score prediction](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/graphs/nbscore.png)
+    * [The accuracy of the best SVM classifier compared to that of the best NB classifier](https://github.com/pdisbeschl/NLP_IMDB_ScoreFromReviews/blob/master/graphs/allbest.png)
 
+For more insight into the experiments and how the above results were ascertained, please see our Jupyter notebook and paper linked above.
 
 The dataset used can be found [here](https://mega.nz/#F!8aRBDYYa!-P3lEjN0jOJgGRTaq91yOg) , it is a slightly modified version of the [SAR14 dataset of Dai Quoc Nguyen et al.](https://drive.google.com/open?id=14ZXV_RWdBgyLYECd7XJnxf2G2fCEfQkp). Our dataset differs from the original in that each mention of "ca n't" has been replaced by "can't", this is assumed to be a parsing error in the original. The original paper for which this dataset was created can be found [here](http://www.aclweb.org/anthology/W14-2621)
 
