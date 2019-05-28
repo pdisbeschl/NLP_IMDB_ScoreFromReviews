@@ -22,6 +22,8 @@ This project compares different approaches to classifying the multivariate senti
 
 For more insight into the experiments and how the above results were ascertained, please see our Jupyter notebook and paper linked above.
 
+This project was set up as part of an assignment for the NLP course at the Department of Data Science & Knowledge Engineering at Maastricht University.
+
 The dataset used can be found [here](https://mega.nz/#F!8aRBDYYa!-P3lEjN0jOJgGRTaq91yOg) , it is a slightly modified version of the [SAR14 dataset of Dai Quoc Nguyen et al.](https://drive.google.com/open?id=14ZXV_RWdBgyLYECd7XJnxf2G2fCEfQkp). Our dataset differs from the original in that each mention of "ca n't" has been replaced by "can't", this is assumed to be a parsing error in the original. The original paper for which this dataset was created can be found [here](http://www.aclweb.org/anthology/W14-2621)
 
 SAR14 is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
